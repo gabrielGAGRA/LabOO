@@ -2,7 +2,7 @@ package JAVA.LabOO.Exercícios.Aula_3;
 
 import java.util.Scanner;
 
-public class Multiplicador_Matrizes {
+public class meuMultiplicador {
     public static void Multiplicador_Colunas(int linha_A, int coluna_A, int linha_B, int coluna_B) {
         Scanner input = new Scanner(System.in);
 
@@ -34,8 +34,8 @@ public class Multiplicador_Matrizes {
         }
     }
 
-    public static void main(String[] args){
-        if (args.length < 4){
+    public static void main(String[] args) {
+        if (args.length < 4) {
             System.out.println("Faltou numeros");
             return;
         }
@@ -44,7 +44,7 @@ public class Multiplicador_Matrizes {
         int coluna_A = Integer.parseInt(args[1]);
         int linha_B = Integer.parseInt(args[2]);
         int coluna_B = Integer.parseInt(args[3]);
-        if(coluna_A == linha_B){
+        if (coluna_A == linha_B) {
             Multiplicador_Colunas(linha_A, coluna_A, linha_B, coluna_B);
         }
     }
