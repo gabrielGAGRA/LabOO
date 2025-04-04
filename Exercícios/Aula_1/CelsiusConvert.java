@@ -1,5 +1,3 @@
-package JAVA.LabOO.Exercícios.Aula_1;
-
 import java.util.Scanner; //biblioteca stdin, java.util.Scanner
 
 public class CelsiusConvert { // criamos classe publica (nosso codigo)
