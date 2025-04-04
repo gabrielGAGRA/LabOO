@@ -1,4 +1,3 @@
-package Exercicios.Aula 1;
 
 import java.util.Scanner; //biblioteca stdin, java.util.Scanner
 
