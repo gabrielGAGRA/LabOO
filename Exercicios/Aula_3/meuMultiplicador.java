@@ -1,4 +1,4 @@
-package JAVA.LabOO.Exercícios.Aula_3;
+package JAVA.LabOO.Exercicios.Aula_3;
 
 import java.util.Scanner;
 
