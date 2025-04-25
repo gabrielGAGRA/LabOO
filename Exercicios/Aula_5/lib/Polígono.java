@@ -1,11 +1,10 @@
-package polígonos;
 
 public class Polígono {
-    protected int[] _lados; // trocar por acesso private faz com que 
+    protected int[] _lados; // trocar por acesso private faz com que
                             // subclasses não possam acessar atributo diretamente
 
-    private String _tipo;   // trocar por protected, expõe atributo para outras classes
-                            // no mesmo pacote, violando encapsulamento
+    private String _tipo; // trocar por protected, expõe atributo para outras classes
+                          // no mesmo pacote, violando encapsulamento
 
     private String _unidade = "cm"; // unidade de medida
 
@@ -13,7 +12,7 @@ public class Polígono {
     private static int _no_polígonos = 0;
 
     // Cria um polígono com array de lados e descrição de tipo.
-    // Se construtor não for public, não podemos criar novo objeto 
+    // Se construtor não for public, não podemos criar novo objeto
     // (usaremos isso mais para a frente)
     public Polígono(int[] lados, String tipo) {
         _lados = lados;
@@ -28,7 +27,8 @@ public class Polígono {
     // Cria polígono regular com dado descrição tipo (num_lados > 0)
     public Polígono(int num_lados, int tam_lado, String tipo) {
         this(new int[num_lados]); // chama construtor acima
-        for (int i = 0; i < num_lados; i++) _lados[i] = tam_lado;
+        for (int i = 0; i < num_lados; i++)
+            _lados[i] = tam_lado;
         _tipo = tipo;
     }
 
@@ -45,6 +45,7 @@ public class Polígono {
     public boolean éCompatívelCom(Polígono outro) {
         return _unidade.equals(outro._unidade);
     }
+
     public static boolean sãoCompatíveis(Polígono um, Polígono outro) {
         return um._unidade.equals(outro._unidade);
     }
@@ -53,7 +54,8 @@ public class Polígono {
     // p.ex., se alterar para private, chamada em App.java gera erro
     public int calculaPerímetro() {
         int p = 0;
-        for (int lado: _lados) p += lado;
+        for (int lado : _lados)
+            p += lado;
         return p;
     }
 
