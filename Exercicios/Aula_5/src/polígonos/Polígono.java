@@ -1,3 +1,4 @@
+package polígonos;
 
 public class Polígono {
     protected int[] _lados; // trocar por acesso private faz com que
