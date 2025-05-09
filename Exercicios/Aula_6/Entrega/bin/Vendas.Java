@@ -1,4 +1,4 @@
-/* Implemente em Java, usando Polimorfismo, uma boa arquitetura OO para o seguinte problema. */
+/* Implemente em Java, usando Polimorfismo, uma boa arquitetura OO para o seguinte problema.*/
 
 /* Cada venda possui um código do item, nome do item e valor da venda.*/
 public abstract class Vendas {
