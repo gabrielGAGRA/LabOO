@@ -34,5 +34,6 @@ public class CelsiusConvert { // criamos classe publica (nosso codigo)
         System.out.print("Enter temperature: ");
         double temperatura = input.nextDouble();
         converte_temperatura(temperatura, escolha);
+        input.close();
     }
 }
