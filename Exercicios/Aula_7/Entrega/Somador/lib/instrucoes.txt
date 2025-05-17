@@ -1,0 +1,11 @@
+Recebe como argumento o nome de um arquivo de texto de entrada e um arquivo de texto de saída.
+    O arquivo deve conter uma sequência de pares de inteiros.
+    O programa deve ler cada par de inteiro da entrada, calcular sua soma e escrever o resultado no arquivo de saída (append).
+    Se o nome do arquivo de saída for omitido, seu programa deve escrever o resultado na saída padrão (terminal).
+
+Dica: Usar a classe Scanner (FileReader) para ler inteiros de um arquivo e 
+a classe PrintWriter e FileWriter para escrever em arquivo. 
+Você pode compor o arquivo de entrada ou saída com uma versão "buffered" para aumentar desempenho (ex. BufferedReader). 
+Note que System.out é um objeto do tipo PrintStream e pode ser usado como argumento de construção para PrintWriter.
+
+Não se esqueça de capturar as exceções!

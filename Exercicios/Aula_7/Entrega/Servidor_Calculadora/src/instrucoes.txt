@@ -1,0 +1,12 @@
+Escreva programas cliente e servidor para um serviço de calculadora via internet.
+
+    O servidor recebe como argumento uma porta para "escutar". 
+    O servidor permite no máximo uma conexão ao cliente e encerra o programa após a desconexão. 
+    Ao receber dois números inteiros do cliente, ele calcula sua soma e envia o resultado ao cliente.
+    O cliente recebe como argumento o endereço de internet (IP) e porta do servidor.
+    O cliente pede ao usuário dois números inteiros e os envia para o servidor.
+    O cliente exibe na tela a resposta do servidor.
+    Esse processo se repete até que o usuário indique que não há mais números.
+
+    
+Dica: Se baseie no código do servidor de eco disponível na página.
