@@ -1,6 +1,3 @@
-import java.util.Scanner;
-
-// talvez abstract cause problemas?
 abstract class Musica {
     private String Titulo;
     private String Nome_Album;
