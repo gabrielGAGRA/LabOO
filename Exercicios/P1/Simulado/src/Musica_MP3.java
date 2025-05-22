@@ -1,10 +1,14 @@
 // Um arquivo MP3 possui título da música, nome do álbum, compositor, intérprete, ano, tamanho em bytes.
-public class Musica_MP3 {
-    private String Titulo;
-    private String Nome_Album;
-    private String Compositor;
-    private String Intérprete;
-    private int Ano;
+public class Musica_MP3 extends Musica {
     private int tamanho;
 
+    Musica_MP3(String Titulo, String Nome_Album, String Compositor, String Intérprete, int Ano, int tamanho) {
+        super(Titulo, Nome_Album, Compositor, Intérprete, Ano);
+        this.tamanho = tamanho;
+    }
+
+    public String toString() {
+        String res = "tamanho: " + tamanho;
+        return res + super.toString();
+    }
 }

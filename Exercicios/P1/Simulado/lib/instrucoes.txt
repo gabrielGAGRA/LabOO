@@ -20,7 +20,9 @@ Uma música em CD possui título, nome do álbum, compositor, intérprete e ano.
 Escreva testes em JUnit para testar a busca por título, compositor e intérprete.
 
 
-Escreva um programa main() que crie uma biblioteca com 10 músicas em diferentes formatos e que depois exercite uma busca por músicas dos anos 90, imprimindo a lista. A impressão deve mostrar as informações armazenadas em todos os atributos dos objetos.
+Escreva um programa main() que crie uma biblioteca com 10 músicas em diferentes formatos e que depois 
+exercite uma busca por músicas dos anos 90, imprimindo a lista. 
+A impressão deve mostrar as informações armazenadas em todos os atributos dos objetos.
 
 
 Lembre-se de evitar duplicação de código.

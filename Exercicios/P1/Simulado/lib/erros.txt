@@ -1,0 +1,20 @@
+class Musica
+
+Musica(String Titulo, String Nome_Album, String Compositor, String Intérprete, int Ano) {
+    this.Titulo = Titulo;
+    this.Nome_Album = Nome_Album;
+    this.Compositor = Compositor;
+    this.Intérprete = Intérprete;
+    this.Ano = Ano;
+}
+
+public String toString() {
+    return super.toString();
+}
+
+CONSTRUTOR NAO TEM "CLASS" ANTES
+
+public String toString() {
+        String res = "Velocidade: " + velocidade;
+        return res + super.toString();
+    }

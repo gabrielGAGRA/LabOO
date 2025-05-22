@@ -1,0 +1,101 @@
+Input:
+import java.util.Scanner;
+Scanner input = new Scanner(System.in);
+double x = input.nextDouble();
+
+input.close();
+
+
+
+
+
+Args (terminal):
+public static void main(String[] args)
+        if (args.length < 4) {
+            System.out.println("Faltou numeros");
+            return;
+        }
+
+        int x = Integer.parseInt(args[0]);
+
+
+
+
+Output:
+System.out.print("Enter temperature: ");
+
+
+
+
+Classe:
+class Matriz {
+    double[][] numeros;
+    int linhas;
+    int colunas;
+
+    public Matriz(int linhas, int colunas) {
+        this.linhas = linhas;
+        this.colunas = colunas;
+        this.numeros = new double[linhas][colunas];
+    }
+
+    public void LerMatriz(Scanner input) {
+        int i, j;
+        for (i = 0; i < linhas; i++) {
+            for (j = 0; j < colunas; j++) {
+                numeros[i][j] = input.nextDouble();
+            }
+        }
+    }
+
+    System.out.println("Digite os valores: ");
+    Matriz x = new Matriz(linhasA, colunasA);
+    x.LerMatriz(input);
+}
+
+
+Classes em arquivos diferentes:
+- Cria cada atributo (int, string), podendo usar atributos originais (Endereco, Conta)
+- Cria metodo construtor (this.string = string, recebendo a string no metodo)
+- Cria metodo .toString (return string com variaveis)
+
+Cliente[] titulares;
+Construtor conta(saldo, etc)
+Funcao sacar, depositar, recebe como argumento a taxa
+
+System.out.println("-- EXTRATO -----------------");
+System.out.println(this);
+
+public ContaComum(Cliente titular, int agência, int número) {
+    super(new Cliente[1], agência, número);
+    this.titulares[0] = titular;
+}
+
+boolean transferir(double valor, Conta para) {
+    // Conta poupança só permite transferência para mesma titularidade
+    if (titulares[0].CPF != para.titulares[0].CPF) return false;
+    return super.transferir(valor, para);
+}
+
+Conta contaDoLuva = new ContaPreferencial(luva, 67, 9876);
+contaDoLuva.depositar(34_520.12);
+Cliente[] titularesConj = {angélica, huck};
+Conta contaConjunta = new ContaConjunta(titularesConj, 34, 101);
+contaConjunta.depositar(3_245_678.90);
+
+Conta[] contas = {contaDaAna, contaDoLuva, contaConjunta, contaDoLuciano, poupançaDoLuva, poupançaJoaquim};
+
+for (Conta conta: contas) { 
+    conta.tirarExtrato(); 
+    System.out.println("Conta válida? " + (conta.validar()?"SIM":"NÃO"));
+}
+
+
+
+
+
+Heranca:
+public String toString() {
+        String res = "Velocidade: " + velocidade;
+        return res + super.toString();
+    }
