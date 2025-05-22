@@ -7,6 +7,10 @@ class Musica_LP extends Musica {
         this.velocidade = velocidade;
     }
 
+    public int getVelocidade() { // Getter para velocidade
+        return velocidade;
+    }
+
     public String toString() {
         String res = "Velocidade: " + velocidade;
         return res + super.toString();

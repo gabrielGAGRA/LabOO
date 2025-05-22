@@ -18,3 +18,69 @@ public String toString() {
         String res = "Velocidade: " + velocidade;
         return res + super.toString();
     }
+
+if (musica instanceof Musica_MP3) {
+    Musica_MP3 mp3 = (Musica_MP3) musica;
+    if (mp3.getTamanho() > tamanhoMinimo) {
+        resultado.add(mp3);
+    }
+}
+
+public List<Musica> buscarPorPeriodo(int anoIni, int anoFim) {
+        List<Musica> resultado = new ArrayList<>();
+        for (Musica musica : listaMusicas) {
+            if (musica.getAno() >= anoIni && musica.getAno() <= anoFim) {
+                resultado.add(musica);
+            }
+        }
+        return resultado;
+}
+
+List<Musica> anos90
+
+List<Musica> anos90 = playlistMusicas.buscarPorPeriodo(1990, 1999);
+        for (Musica m : anos90) {
+            System.out.println(m);
+        }
+
+
+assertEquals(1, encontradas.size());
+
+
+List<Musica> anos90 = playlistMusicas.buscarPorPeriodo(1990, 1999);
+        for (Musica m : anos90) {
+            System.out.println(m);
+        }
+
+if (musica.getCompositor().equalsIgnoreCase(compositor))
+
+
+
+1. EQUALSIGNORECASE
+2. MUSICA INSTANCEOF MUSICA_MP3
+3. LIST<OBJETO> NOME_DA_LIST = NEW ARRAYLIST<>()
+4. SUPER()
+5. THIS.ISSO = ISSO
+
+5. LIST<MUSICA> RESULTADO_BUSCA  = PLAYLIST.BUSCAR(X)
+List<Musica> anos90 = playlistMusicas.buscarPorPeriodo(1990, 1999);
+6. FOR MUSICA x: LISTA_MUSICAS
+SYSTEM.OUT.PRINTIN(x)
+
+7. CONSTRUTOR
+CLASS MUSICA
+MUSICA(){
+    THIS.ISSO = ISSO
+}
+
+8.
+super(Titulo, Nome_Album, Compositor, Intérprete, Ano);
+this.velocidade = velocidade;
+
+9.  public List<Musica> buscarPorInterprete(String interprete) {
+        List<Musica> resultado = new ArrayList<>();
+        for (Musica x : playlistMusicas) {
+            if (x.getIntérprete().equalsIgnoreCase(interprete)) {
+                resultado.add(x);
+            } 
+        }}

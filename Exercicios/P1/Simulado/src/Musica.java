@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 // talvez abstract cause problemas?
 abstract class Musica {
     private String Titulo;
@@ -14,14 +16,24 @@ abstract class Musica {
         this.Ano = Ano;
     }
 
-    /*
-     * poder fazer buscas por
-     * título da música, compositor, intérprete, período (ano de início, ano de
-     * fim).
-     */
-    public static ArrayList buscaMusicas(String Titulo, String Compositor, String Intérprete, int Ano_Inicio,
-            int Ano_Fim) {
+    public String getTitulo() {
+        return Titulo;
+    }
 
+    public String getNome_Album() {
+        return Nome_Album;
+    }
+
+    public String getCompositor() {
+        return Compositor;
+    }
+
+    public String getIntérprete() {
+        return Intérprete;
+    }
+
+    public int getAno() {
+        return Ano;
     }
 
     public String toString() {

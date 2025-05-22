@@ -7,6 +7,10 @@ public class Musica_MP3 extends Musica {
         this.tamanho = tamanho;
     }
 
+    public int getTamanho() { // Getter para tamanho
+        return tamanho;
+    }
+
     public String toString() {
         String res = "tamanho: " + tamanho;
         return res + super.toString();
